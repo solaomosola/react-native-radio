@@ -1,0 +1,106 @@
+import Entypo from 'react-native-vector-icons/Entypo';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import Feather from 'react-native-vector-icons/Feather';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Foundation from 'react-native-vector-icons/Foundation';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Octicons from 'react-native-vector-icons/Octicons';
+import Zocial from 'react-native-vector-icons/Zocial';
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+
+console.log(grouptype)
+    switch (grouptype) {
+        case "MaterialIcons":
+        
+           return(
+              <View> </View>
+           ) 
+           // break;
+    
+  //      default:
+  //          break;
+    }
+//return null
+
+
+
+
+<RadioGroup>
+            <Radio
+                iconName={"lens"}
+                selection={this.state.selection}
+                label={"The first option"}
+                value={"A"}
+                getSelection={this.getSelection}/>
+            <Radio
+                iconName={"lens"}
+                selection={this.state.selection}
+                label={"The first option"}
+                value={"B"}
+                getSelection={this.getSelection}/>
+            <Radio
+                iconName={"lens"}
+                selection={this.state.selection}
+                label={"The first option"}
+                value={"C"}
+                getSelection={this.getSelection}/>
+            <Radio
+                label={"TIme"}
+                value={"D"}
+                getSelection={this.getSelection}
+                selection={this.state.selection}/>
+        </RadioGroup>
+
+         <RadioGroup>
+                <Radio
+                    iconName={"lens"}
+                    //selection={this.state.selection}
+                    label={"The first option"}
+                    value={"A"}
+                //getSelection={this.getSelection}
+                />
+                <Radio
+                    iconName={"lens"}
+                    //selection={this.state.selection}
+                    label={"The first option"}
+                    value={"B"}
+                //getSelection={this.getSelection}
+                />
+                <Radio
+                    iconName={"lens"}
+                    //selection={this.state.selection}
+                    label={"The first option"}
+                    value={"C"}
+                //getSelection={this.getSelection}
+                />
+                <Radio
+                    label={"TIme"}
+                    value={"D"}
+                //getSelection={this.getSelection}
+                //selection={this.state.selection}
+                />
+            </RadioGroup>
+
+            <Radio
+                    iconName={"lens"}
+                    label={"The first option"}
+                    value={"A"}
+                />
+                <Radio
+                    iconName={"lens"}
+                    label={"The first option"}
+                    value={"B"}
+                />
+                <Radio
+                    iconName={"lens"}
+                    label={"The first option"}
+                    value={"C"}
+                
+                />
+                <Radio
+                    label={"TIme"}
+                    value={"D"}
+                />
+
+                console.log("value="+value +" selection=" + selection + " selected="+ selected)
