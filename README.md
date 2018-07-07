@@ -1,11 +1,12 @@
 ## react-native-radio-input
 A pure react, easy to use and highly customizable radio group. As easy as html radio.
 
+
 ![sample](https://user-images.githubusercontent.com/9248956/42413128-e42f1464-8211-11e8-80b8-abc95d29c71a.gif)
 ![sample2](https://user-images.githubusercontent.com/9248956/42413530-5c7f5cfa-821a-11e8-883f-15791cde731b.gif)
 
 * [Installation](#Installation)
-* [Example](#Example)
+* [Examples](#Examples)
   * [Basic](#Basic)
   * [Moderate to Advanced](#Moderate-To-Advanced)
     * [Styling](#Styling) 
@@ -71,7 +72,7 @@ The core of the button is made of icons from react-native-vector-icons
     <th class="tg-yw4l"><b>Proptype</b></th>
     <th class="tg-yw4l"><b>Required</b></th>
     <th class="tg-yw4l"><b>Default</b></th>
-    <th class="tg-yw4l"><b>Example</b></th>
+    <th class="tg-yw4l"><b>Examples</b></th>
   </tr>
   <tr>
     <td class="tg-yw4l">getChecked</td>
@@ -135,7 +136,7 @@ coreStyle - React Native Text Style
     <th class="tg-yw4l"><b>Proptype</b></th>
     <th class="tg-yw4l"><b>Required</b></th>
     <th class="tg-yw4l"><b>Default</b></th>
-    <th class="tg-yw4l"><b>Example</b></th>
+    <th class="tg-yw4l"><b>Examples</b></th>
 
   </tr>
   <tr>
