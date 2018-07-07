@@ -19,6 +19,8 @@ npm i react-native-radio-input
 #Examples
 ##Basic
 ```
+import RadioGroup from "react-native-radio-input";
+import Radio from "react-native-radio-input";
 ...
 getChecked = (value) => {
     // value = our checked value
