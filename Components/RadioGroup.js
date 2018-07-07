@@ -1,11 +1,12 @@
 import React, {Component} from "react";
 import {View} from "react-native";
-import Radio from "./Radio";
 import PropTypes from "prop-types"
+import * as styles from "./Style/Style"
 
 class RadioGroup extends Component {
     constructor(props) {
         super(props);
+        console.log(props)
         let selection = ""
         this.state = {
             selection
@@ -14,10 +15,19 @@ class RadioGroup extends Component {
             .setChildrenProps
             .bind(this)
     }
-
+    /**
+ *getSelection
+ *This implements the selection
+ *
+ * @memberof RadioGroup
+ */
     getSelection = (value) => {
         let selection = value;
         this.setState({selection})
+        this
+            .props
+            .getChecked(value)
+
     }
     setChildrenProps = () => {
         return React
@@ -37,7 +47,8 @@ class RadioGroup extends Component {
 
     render = () => {
         return (
-            <View>
+            <View
+                style={[styles.RadioGroupStyle.main, this.props.RadioGroupStyle]}>
                 {this.setChildrenProps()}
             </View>
         )
@@ -45,15 +56,16 @@ class RadioGroup extends Component {
 }
 
 RadioGroup.propTypes = {
+
     RadioStyle: PropTypes.object,
     IconStyle: PropTypes.object,
     labelStyle: PropTypes.object,
-    coreStyle: PropTypes.object
+    coreStyle: PropTypes.object,
+    getChecked: PropTypes.func,
+    RadioGroupStyle:PropTypes.object
 }
 RadioGroup.defaultProps = {
-    RadioStyle: {
-       
-    },
+    RadioStyle: {},
     IconStyle: {
         backgroundColor: "transparent"
         //color: "black"
@@ -64,6 +76,9 @@ RadioGroup.defaultProps = {
     coreStyle: {
         fontSize: 20,
         alignSelf: "center"
+    },
+    RadioGroupStyle: {
+       
     }
 }
 

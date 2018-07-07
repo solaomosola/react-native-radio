@@ -1,7 +1,7 @@
 {
-  "name": "RadioButton",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-native-radio-input",
+  "version": "0.9.1",
+  "private": false,
   "devDependencies": {
     "jest-expo": "~27.0.0",
     "react-native-scripts": "1.14.0",

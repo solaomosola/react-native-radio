@@ -27,3 +27,8 @@ export const coreStyle = StyleSheet.create({
         fontSize: 20
     }
 })
+export const RadioGroupStyle = StyleSheet.create({
+    main:{
+        flexDirection:"column"
+    }
+})
