@@ -1,8 +1,26 @@
 {
   "name": "react-native-radio-input",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "private": false,
   "license": "Apache-2.0",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solaomosola/react-native-radio.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "android",
+    "ios",
+    "radio",
+    "radio-button",
+    "radio-group"
+  ],
+  "author": {
+    "name": "solaomosola",
+    "url": "https://github.com/solaomosola"
+  },
   "devDependencies": {
     "jest-expo": "~27.0.0",
     "react-native-scripts": "1.14.0",
@@ -19,16 +37,12 @@
   "jest": {
     "preset": "react-native"
   },
-  "dependencies": {
-    "badges": "^1.2.4",
-    "chai": "^4.1.2",
-    "enzyme": "^3.3.0",
-    "expo": "^27.0.1",
-    "mocha": "^5.2.0",
-    "react": "16.3.1",
-    "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.4.0",
-    "react-native": "~0.55.2",
+  "dependencies": {},
+  "peerDependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-native": "^0.56.0",
     "react-native-vector-icons": "^4.6.0"
   }
 }
