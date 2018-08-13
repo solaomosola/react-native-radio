@@ -15,13 +15,16 @@ A pure react, easy to use and highly customizable radio group. As easy as html r
 * [License](#License)
 #Installation
 ``` 
-npm i react-native-radio-input
+yarn add react-native-radio-input --save
+yarn add react-native-vector-icons --save
+react-native link
+
 ```
 #Examples
 ##Basic
 ```
-import RadioGroup from "react-native-radio-input";
-import Radio from "react-native-radio-input";
+import RadioGroup,{Radio} from "react-native-radio-input";
+
 ...
 getChecked = (value) => {
     // value = our checked value

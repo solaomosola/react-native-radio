@@ -16,15 +16,23 @@ const Radio = ({
     labelStyle,
     coreStyle
 }) => {
+
     let selected = selection === value;
-    
+
     return (
         <View>
-            <TouchableOpacity onPress={getSelection.bind(this, value)} style={[Styles.RadioStyle.main,RadioStyle]}>
-                <View style={[Styles.IconStyle.main,IconStyle]}>
-                    <TheIcon iconGroup ={iconGroup} iconName={iconName} selected={selected} style={coreStyle}/>
+            <TouchableOpacity
+                onPress={getSelection.bind(this, value)}
+                style={[Styles.RadioStyle.main, RadioStyle]}>
+                <View style={[Styles.IconStyle.main, IconStyle]}>
+                    <TheIcon
+                        iconGroup
+                        ={iconGroup}
+                        iconName={iconName}
+                        selected={selected}
+                        style={coreStyle}/>
                 </View>
-                <Text style={[Styles.labelStyle.main,labelStyle]}>{label}</Text>
+                <Text style={[Styles.labelStyle.main, labelStyle]}>{label}</Text>
             </TouchableOpacity>
         </View>
     )

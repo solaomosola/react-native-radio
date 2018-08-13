@@ -1,23 +1,17 @@
-import React from 'react';
-import {StyleSheet, Alert, View, Text} from 'react-native';
-import RadioGroup from "./Components/RadioGroup";
-import Radio from "./Components/Radio";
 
-/**
- *This is the example for react-native-radio-input
- *
- * @export
- * @class App
- * @extends {React.Component}
- */
-export default class App extends React.Component {
+import React, {Component} from 'react';
+import {Platform, StyleSheet, Text, View} from 'react-native';
 
-  /**
-   *getChecked (value)
-   *value is the checked calue
-   *
-   * @memberof App
-   */
+import RadioGroup,{ Radio } from "./Components/main";
+import Icon from "react-native-vector-icons/MaterialIcons"
+
+const instructions = Platform.select({
+  ios: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu',
+  android: 'Double tap R on your keyboard to reload,\nShake or press menu button for dev men' +
+      'u'
+});
+
+export default class App extends Component {
   getChecked = (value) => {
     // value = our checked value
 
@@ -27,14 +21,17 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
 
-        <RadioGroup getChecked={this.getChecked} RadioGroupStyle={{ flexDirection: "row" }}>
-          <Radio iconName={"lens"} label={"A"} value={"A"} />
+        <RadioGroup
+          getChecked={this.getChecked}
+          RadioGroupStyle={{
+          flexDirection: "row"
+        }}>
+          <Radio iconName={"lens"} label={"A"} value={"A"}/>
           <Radio iconName={"lens"} label={"B"} value={"B"}/>
           <Radio iconName={"lens"} label={"C"} value={1}/>
           <Radio label={"D"} value={"Yes"}/>
           <Radio label={"E"} value={"This is a Sentence"}/>
         </RadioGroup>
-
       </View>
     );
   }
@@ -43,8 +40,18 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    justifyContent: 'center',
     alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: '#F5FCFF'
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5
   }
 });
