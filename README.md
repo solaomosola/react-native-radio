@@ -20,8 +20,8 @@ yarn add react-native-vector-icons --save
 react-native link
 
 ```
-#Examples
-##Basic
+# Examples
+## Basic
 ```
 import RadioGroup,{Radio} from "react-native-radio-input";
 
@@ -40,7 +40,7 @@ getChecked = (value) => {
 </RadioGroup>
 ...
 ```
-###Moderate-To-Advanced
+### Moderate-To-Advanced
 You can add styles, see the props
 ```
 ...
@@ -58,16 +58,16 @@ getChecked = (value) => {
 </RadioGroup>
 ...
 ```
-####Styling
+#### Styling
 Style the radio group, radio button, the label, and the core of the button.
 
-####Icons
+#### Icons
 The core of the button is made of icons from react-native-vector-icons
 
-##Props
+## Props
 
 
-######Radio Group
+#### Radio Group
 
 <table class="tg">
   <tr>
@@ -131,7 +131,7 @@ IconStyle - React Native Text Style
 labelStyle - React Native Text Style
 coreStyle - React Native Text Style
 
-#####Radio 
+#### Radio 
 
 <table class="tg">
   <tr>
@@ -172,7 +172,7 @@ coreStyle - React Native Text Style
   </tr>
   
 </table>
-iconGroup - based on react-native-vector-icons v4.6.0 by [@oblador](https://oblador.github.io/react-native-vector-icons) . All the icon groups are supported. Default is "MaterialIcons".
+iconGroup - based on [react-native-vector-icons](https://oblador.github.io/react-native-vector-icons) v4.6.0 by @oblador. All the icon groups are supported. Default is "MaterialIcons".
 
 iconName - Any icon from the iconGroup mentioned. Default is "lens" - (Required).
 
