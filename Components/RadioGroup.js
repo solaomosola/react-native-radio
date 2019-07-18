@@ -6,11 +6,9 @@ import * as styles from "./Style/Style"
 class RadioGroup extends Component {
     constructor(props) {
         super(props);
-        console.log(props)
-        let selection = ""
         this.state = {
-            selection
-        }
+            selection: '',
+        };
         this.setChildrenProps = this
             .setChildrenProps
             .bind(this)
