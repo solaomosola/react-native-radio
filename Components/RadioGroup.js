@@ -19,12 +19,9 @@ class RadioGroup extends Component {
  *
  * @memberof RadioGroup
  */
-    getSelection = (value) => {
-        let selection = value;
+    getSelection = (selection) => {
         this.setState({selection})
-        this
-            .props
-            .getChecked(value)
+        this.props.getChecked(value)
 
     }
     setChildrenProps = () => {
