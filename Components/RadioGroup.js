@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
-import { View } from "react-native";
-import * as styles from "./Style/Style";
+import React, {Component} from "react";
+import {View} from "react-native";
+import PropTypes from "prop-types"
+import * as styles from "./Style/Style"
 
 class RadioGroup extends Component {
     constructor(props) {
         super(props);
-        let selection = this.props.selection;
+        let selection = this.props.selection
         this.state = {
             selection
         }
@@ -22,7 +22,7 @@ class RadioGroup extends Component {
  */
     getSelection = (value) => {
         let selection = value;
-        this.setState({ selection })
+        this.setState({selection})
         this
             .props
             .getChecked(value)
@@ -61,7 +61,7 @@ RadioGroup.propTypes = {
     labelStyle: PropTypes.object,
     coreStyle: PropTypes.object,
     getChecked: PropTypes.func,
-    RadioGroupStyle: PropTypes.object
+    RadioGroupStyle:PropTypes.object
 }
 RadioGroup.defaultProps = {
     RadioStyle: {},
@@ -77,7 +77,7 @@ RadioGroup.defaultProps = {
         alignSelf: "center"
     },
     RadioGroupStyle: {
-
+       
     }
 }
 
